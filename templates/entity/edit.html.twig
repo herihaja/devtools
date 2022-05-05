@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Entity{% endblock %}
+
+{% block body %}
+    <h1>Edit Entity</h1>
+
+    {{ include('entity/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_entity_field_new') }}">add field</a>
+
+    <a href="{{ path('app_entity_index') }}">back to list</a>
+
+    {{ include('entity/_delete_form.html.twig') }}
+
+    <div id="fields-list">
+
+    </div>
+
+{% endblock %}
